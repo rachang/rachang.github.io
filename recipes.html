@@ -3,43 +3,83 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<title>Cooking Korean Food With Maangchi</title>
 </head>
 <body>
-	<h1>MAANGCHI</h1>
-	<!--https://www.w3schools.com/howto/howto_js_topnav.asp-->
 	<header>
-	    <nav>
-	  		<a href="index.html">Home</a>
-	  		<a class = "active" href="recipes.html">Recipes</a>
-	  		<a href="ingredients.html">Ingredients</a>
-	  		<a href="media.html">In The Media</a>
+	    <nav class="navbar navbar-light bg-light">
+	    	<a class="navbar-brand" href="index.html">
+	    		<img src="images/maangchi_face.png" class="d-inline-block align-top" alt = "Maangchi logo">
+	    		Maangchi
+	    	</a>
+	    	<ul class="nav justify-content-start">
+	    		<li class="nav-item">
+	    			<a href="index.html">Home</a>
+	    		<li class="nav-item">
+	    			<a class="active" href="recipes.html">Recipes</a>
+	    		<li class="nav-item">
+	    			<a href="ingredients.html">Ingredients</a>
+	    		<li class="nav-item">
+	    			<a href="media.html">In The Media</a>
+	    	</ul>
 		</nav>
 	</header>
+
 	<img src = "images/cookbook.jpg" alt = "Maangchi's Cookbook">
 	<div class="recipes_description">
 		<p>Welcome to my Korean recipes! I hope you find something you like! If there's a dish that you want to learn that's not here, please request it. If you're new to Korean cooking, you can check out my Beginner's Guide to Korean Cooking. and if you make something delicious with one of my recipes, you can upload a photo of it to my photo page, or tag it #maangchi on Instagram or Twitter. If you need Korean groceries, you can find them in Korean grocery stores in your area, or on Amazon.</p>
 		<p>Below are the most popular recipes. Find more <a href="https://www.maangchi.com/recipes">here</a></p>
 	</div>
-	<div class="recipe_links">
-		<h2><a href="https://www.maangchi.com/recipe/japchae">Japchae</a></h2>
-		<img src = "images/japchae_plate.jpg" alt = "japchae_plate">
-		<h2><a href="https://www.maangchi.com/recipe/jjajangmyeon">Jjajangmyeon</a></h2>
-		<img src="images/jjajangmyeon-plate.jpg" alt="jjajangmyeon-plate">
-		<h2><a href="https://www.maangchi.com/recipe/tteokbokki">Tteokbokki</a></h2>
-		<img src = "images/ddeokbokki_sizzlingpot.jpg" alt="ddeokbokki_sizzlingpot">
-		<h2><a href="https://www.maangchi.com/recipe/bibimbap">Bibimbap</a></h2>
-		<img src = "images/bibimbap-bowl.jpg" alt = "bibimbap-bowl">
-		<h2><a href="https://www.maangchi.com/recipe/soondubu-jjigae">Soondubu Jjigae</a></h2>
-		<img src = "images/soondubu.jpg" alt = "soondubu-jjigae">
-		<h2><a href="https://www.maangchi.com/recipe/easy-kimchi">Easy Kimchi</a></h2>
-		<img src = "images/kimchi.jpg" alt = "easy-kimchi">
-		<h2><a href = "https://www.maangchi.com/recipe/yangnyeom-tongdak">Yangnyeom Tongdak</a></h2>
-		<img src = "images/chicken.jpg" alt = "yangnyeom-tongdak">
-		<h2><a href="https://www.maangchi.com/recipe/easy-dakgangjeong">Dakgangjeong</a></h2>
-		<img src = "images/dakgangjeong.jpg" alt = "easy-dakgangjeong">
-		<h2><a href="https://www.maangchi.com/recipe/tongbaechu-kimchi">Tongbaechu Kimchi</a></h2>
-		<img src="images/whole-cabbage-kimchi.jpg" alt = "tongbaechu-kimchi">
+
+<!--https://www.taniarascia.com/how-to-build-a-responsive-image-gallery-with-flexbox/-->
+	<div class="container">
+  		<div class="grid">
+    		<div class="cell">
+      			<h2><a href="https://www.maangchi.com/recipe/japchae">Japchae</a></h2>
+				<img src = "images/japchae_plate.jpg" alt = "japchae_plate" class="responsive-image">
+    		</div>
+    		<div class="cell">
+      			<h2><a href="https://www.maangchi.com/recipe/jjajangmyeon">Jjajangmyeon</a></h2>
+				<img src="images/jjajangmyeon-plate.jpg" alt="jjajangmyeon-plate" class="responsive-image">
+    		</div>
+    		<div class="cell">
+      			<h2><a href="https://www.maangchi.com/recipe/tteokbokki">Tteokbokki</a></h2>
+				<img src = "images/ddeokbokki_sizzlingpot.jpg" alt="ddeokbokki_sizzlingpot" class="responsive-image">
+    		</div>
+    		<div class="cell">
+      			<h2><a href="https://www.maangchi.com/recipe/bibimbap">Bibimbap</a></h2>
+				<img src = "images/bibimbap-bowl.jpg" alt = "bibimbap-bowl" class="responsive-image">
+    		</div>
+    		<div class="cell">
+      			<h2><a href="https://www.maangchi.com/recipe/soondubu-jjigae">Soondubu Jjigae</a></h2>
+				<img src = "images/soondubu.jpg" alt = "soondubu-jjigae" class="responsive-image">
+    		</div>
+    		<div class="cell">
+    			<h2><a href="https://www.maangchi.com/recipe/easy-kimchi">Easy Kimchi</a></h2>
+				<img src = "images/kimchi.jpg" alt = "easy-kimchi" class="responsive-image">
+			</div>
+			<div class="cell">
+				<h2><a href = "https://www.maangchi.com/recipe/yangnyeom-tongdak">Yangnyeom Tongdak</a></h2>
+				<img src = "images/chicken.jpg" alt = "yangnyeom-tongdak" class="responsive-image">
+			</div>
+			<div class="cell">
+				<h2><a href="https://www.maangchi.com/recipe/easy-dakgangjeong">Dakgangjeong</a></h2>
+				<img src = "images/dakgangjeong.jpg" alt = "easy-dakgangjeong" class="responsive-image">
+			</div>
+			<div class="cell">
+				<h2><a href="https://www.maangchi.com/recipe/tongbaechu-kimchi">Tongbaechu Kimchi</a></h2>
+				<img src="images/whole-cabbage-kimchi.jpg" alt = "tongbaechu-kimchi" class="responsive-image">
+			</div>
+  		</div>
 	</div>
+	<footer>
+		<a href="https://www.facebook.com/maangchi"><i class="fab fa-facebook fa-3x" aria-label="facebook icon"></i></a>
+		<a href="https://twitter.com/maangchi"><i class="fab fa-twitter fa-3x" aria-label="twitter icon"></i></a>
+		<a href="https://www.youtube.com/user/Maangchi"><i class="fab fa-youtube fa-3x" aria-label="youtube icon"></i></a>
+		<a href="https://www.instagram.com/maangchi/"><i class="fab fa-instagram fa-3x" aria-label="instagram icon"></i></a>
+	</footer>
 </body>
 </html>

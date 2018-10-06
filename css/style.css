@@ -1,6 +1,15 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
 nav{
 	margin: 0px;
-    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.navbar-brand img{
+	width: 30px;
+	height: 30px;
 }
 nav a{
 	text-decoration: none;
@@ -15,4 +24,63 @@ nav a{
 
 nav a:hover {
     background-color: grey;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.cell img {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 3);
+  }
+}
+
+.cell {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+}
+
+i{
+	color: grey;
+}
+
+i:hover{
+	color: black;
+}
+
+.nytimes{
+	background-image: url(images/maangchi_nyt.jpg);
 }
