@@ -74,13 +74,21 @@ nav a:hover {
 }
 
 i{
-	color: grey;
-}
-
-i:hover{
 	color: black;
 }
 
-.nytimes{
-	background-image: url("https://www.maangchi.com/wp-content/uploads/2009/06/maangchi-nyt-2015-06-03-e1.jpg");
+i:hover{
+	color: grey;
 }
+
+footer{
+	background-image: url("../images/blur.png");
+	/* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
