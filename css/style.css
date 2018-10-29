@@ -6,6 +6,10 @@ a:link{
   color: #00003E;
 }
 
+a:visited{
+	color: #00003E;
+}
+
 nav{
 	margin: 0px;
     padding-top: 16px;
@@ -24,7 +28,7 @@ nav a{
 
 .active{
 	text-transform: uppercase;
-
+	color: #00003E;
 }
 
 nav a:hover {
