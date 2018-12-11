@@ -2,6 +2,10 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+.main {
+  margin: 30px;
+}
+
 a:link{
   color: #00003E;
 }
