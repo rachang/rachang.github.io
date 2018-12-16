@@ -40,26 +40,55 @@ nav a:hover {
 .mySlides {
 	display:none;
 	text-align:center;
-	width: 70%;
+	width: 100%;
 	display:block;
 	margin:auto;}
 .w3-center, .w3-container, .w3-section, .w3-large, .w3-text-white, .w3-display-bottommiddle {
-	width:70%;
+	width: 100%;
 }
 .w3-left, .w3-right, .w3-badge {
 	cursor:pointer
 }
 .w3-badge {
-	height:13px;
-	width:13px;
+	height: 0.8125rem;
+	width: 0.8125rem;
 	padding:0;
 }
 
 /*Home Page*/
 .about_paragraph {
 	text-align: center;
-	margin: 30px;
+	margin: 0px;
 }
+
+@media screen and (min-width: 600px) {
+	.about_paragraph {
+		margin: 0px;
+	}
+
+	.mySlides {
+		width: 100%;
+	}
+
+	.w3-center, .w3-container, .w3-section, .w3-large, .w3-text-white, .w3-display-bottommiddle {
+	width: 100%;
+}
+}
+
+@media screen and (min-width: 768px) {
+	.about_paragraph {
+		margin: 60px;
+	}
+
+	.mySlides {
+		width: 70%;
+	}
+
+	.w3-center, .w3-container, .w3-section, .w3-large, .w3-text-white, .w3-display-bottommiddle {
+	width: 70%;
+}
+}
+
 .cookbook {
 	margin-right:15px;
 	margin-bottom: 15px;
